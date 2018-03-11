@@ -10,4 +10,12 @@ describe("Utility Examples", function() {
       expect(ageInYears("1980-05-17")).toEqual(37);
     });
   });
+
+  describe("isOver21()", function() {
+    it("returns true when the age is 21");
+
+    it("returns true when the age is over 21");
+
+    it("returns false when the age is over 21");
+  });
 });
