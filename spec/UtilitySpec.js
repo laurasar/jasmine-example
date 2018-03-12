@@ -36,4 +36,14 @@ describe("Utility Examples", function() {
       expect(isOver21("2000-01-01")).toBe(false);
     });
   });
+
+  describe("isLeapYear()", () => {
+    it("returns true if the year is evenly divisible by 4", () => {
+      expect(isLeapYear(2016)).toBe(true);
+    });
+
+    it("returns false if the year is not evenly divisible by 4", () => {
+      expect(isLeapYear(2018)).toBe(false);
+    });
+  });
 });
