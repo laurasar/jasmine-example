@@ -13,7 +13,10 @@ describe("a set of utility functions", function() {
   // ageInYears('1990-09-01')
   describe("ageInYears()", function(){
     it("returns the age from a birth date", function() {
+      const today = new Date ("2018-09-12");
+      spyOn(window, "getNow").and.returnValue(today);
       expect(ageInYears("1990-09-01")).toEqual(28);
     });
+
   });
 });
